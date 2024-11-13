@@ -1,25 +1,18 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import HomeScreen from "./src/screens/HomeScreen";
 import { ThemeProvider } from "./src/hooks/ThemeProvider";
+import BottomNavigation from "./src/navigation/BottomNavigation";
+import { NavigationContainer } from "@react-navigation/native"; // Asegúrate de importar esto
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>BookLine:)</Text>
+    <NavigationContainer>
       <ThemeProvider>
-        <HomeScreen />
+        <View style={{ flex: 1 }}>
+          <BottomNavigation />
+        </View>
       </ThemeProvider>
-      <StatusBar style="auto" />
-    </View>
+      <StatusBar style="dark" />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
