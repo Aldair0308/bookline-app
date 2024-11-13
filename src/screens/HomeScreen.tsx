@@ -1,17 +1,25 @@
+// Screen.tsx
+
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, Switch } from "react-native";
-// import { useTheme } from "./../hooks/useTheme"; // Importa el hook useTheme
+import { useTheme } from "./../hooks/useTheme"; // Importa el hook useTheme
+import ThemeSwitch from "../components/ThemeSwitch";
 
-const HomeScreen = () => {
-// const { theme } = useTheme();
+const CamScreen = () => {
+  const { theme } = useTheme();
 
-return (
-<View>
-<View>
-<Text>Inicio</Text>
-</View>
-</View>
-);
+  return (
+    <View style={[theme.styles.container]}>
+      <View
+        style={[
+          theme.styles.containerSet,
+          { paddingHorizontal: 20, paddingTop: 20 },
+        ]}
+      >
+        <ThemeSwitch />
+      </View>
+    </View>
+  );
 };
 
-export default HomeScreen;
+export default CamScreen;
