@@ -1,11 +1,11 @@
-// Screen.tsx
+// HomeScreen.tsx
 
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, Switch } from "react-native";
 import { useTheme } from "./../hooks/useTheme"; // Importa el hook useTheme
 import ThemeSwitch from "../components/ThemeSwitch";
 
-const CamScreen = () => {
+const HomeScreen = () => {
   const { theme } = useTheme();
 
   return (
@@ -22,4 +22,4 @@ const CamScreen = () => {
   );
 };
 
-export default CamScreen;
+export default HomeScreen;

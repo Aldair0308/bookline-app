@@ -18,6 +18,7 @@ const BottomNavigation = () => {
 
   return (
     <BottomTab.Navigator
+      initialRouteName="Leyendo"
       shifting={true}
       activeColor={theme.colors.primary}
       inactiveColor={theme.colors.text}
