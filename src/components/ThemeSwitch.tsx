@@ -63,8 +63,8 @@ const ThemeSwitch: React.FC = () => {
           <Image
             source={
               isDay
-                ? require("./../../assets/icon.png") // Imagen del modo día
-                : require("./../../assets/icon.png") // Imagen del modo noche
+                ? require("./../../assets/day.jpg") // Imagen del modo día
+                : require("./../../assets/night.jpg") // Imagen del modo noche
             }
             style={styles.icon}
           />
