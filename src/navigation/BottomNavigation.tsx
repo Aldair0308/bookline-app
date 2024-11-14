@@ -3,6 +3,7 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import { FontAwesome5 } from "@expo/vector-icons";
 import { useTheme } from "../hooks/useTheme";
 import HomeScreen from "../screens/HomeScreen";
+import NewsScreen from "../screens/NewsScreen";
 
 const BottomTab = createMaterialBottomTabNavigator();
 
@@ -31,7 +32,7 @@ const BottomNavigation = () => {
       />
       <BottomTab.Screen
         name="Noticias"
-        component={HomeScreen}
+        component={NewsScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <FontAwesome5 name="newspaper" color={color} size={26} />
