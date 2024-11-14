@@ -6,6 +6,7 @@ import HomeScreen from "../screens/HomeScreen";
 import NewsScreen from "../screens/NewsScreen";
 import CurrentScreen from "../screens/CurrentScreen";
 import LibraryScreen from "../screens/LibraryScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 
 const BottomTab = createMaterialBottomTabNavigator();
 
@@ -61,7 +62,7 @@ const BottomNavigation = () => {
       />
       <BottomTab.Screen
         name="Perfil"
-        component={HomeScreen}
+        component={ProfileScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <FontAwesome5 name="user" color={color} size={26} />
