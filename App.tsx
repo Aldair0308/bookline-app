@@ -8,9 +8,7 @@ export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ThemeProvider>
-        <View style={{ flex: 1 }}>
-          <MainStackNavigator />
-        </View>
+        <MainStackNavigator />
       </ThemeProvider>
       <StatusBar style="dark" />
     </GestureHandlerRootView>
