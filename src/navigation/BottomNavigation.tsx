@@ -4,6 +4,8 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { useTheme } from "../hooks/useTheme";
 import HomeScreen from "../screens/HomeScreen";
 import NewsScreen from "../screens/NewsScreen";
+import CurrentScreen from "../screens/CurrentScreen";
+import LibraryScreen from "../screens/LibraryScreen";
 
 const BottomTab = createMaterialBottomTabNavigator();
 
@@ -41,7 +43,7 @@ const BottomNavigation = () => {
       />
       <BottomTab.Screen
         name="Leyendo"
-        component={HomeScreen}
+        component={CurrentScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <FontAwesome5 name="book-open" color={color} size={26} />
@@ -50,7 +52,7 @@ const BottomNavigation = () => {
       />
       <BottomTab.Screen
         name="Mis libros"
-        component={HomeScreen}
+        component={LibraryScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <FontAwesome5 name="book" color={color} size={26} />
