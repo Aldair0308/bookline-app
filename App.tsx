@@ -1,9 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { ThemeProvider } from "./src/hooks/ThemeProvider";
-import BottomNavigation from "./src/navigation/BottomNavigation";
 import { NavigationContainer } from "@react-navigation/native"; // Asegúrate de importar esto
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import DrawerNavigator from "./src/navigation/DrawerNavigation";
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       <NavigationContainer>
         <ThemeProvider>
           <View style={{ flex: 1 }}>
-            <BottomNavigation />
+            <DrawerNavigator />
           </View>
         </ThemeProvider>
         <StatusBar style="dark" />
